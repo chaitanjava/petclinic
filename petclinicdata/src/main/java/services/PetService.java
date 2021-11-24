@@ -4,9 +4,6 @@ import com.example.sfg.petclinic.model.Pet;
 
 import java.util.Set;
 
-public interface PetService {
+public interface PetService extends CrudService{
 
-    Pet findbyId(Long id);
-    Pet save(Pet pet);
-    Set<Pet> findAll();
 }
