@@ -1,4 +1,6 @@
 package com.example.sfg.petclinic.model;
 
-public class PetOwner extends Person{
+public class Owner extends BaseEntity {
+
+
 }

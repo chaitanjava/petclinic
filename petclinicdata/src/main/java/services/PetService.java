@@ -4,6 +4,6 @@ import com.example.sfg.petclinic.model.Pet;
 
 import java.util.Set;
 
-public interface PetService extends CrudService{
+public interface PetService extends CrudService<Pet,Long>{
 
 }
