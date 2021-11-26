@@ -1,12 +1,13 @@
 package services.map;
 
+import com.example.sfg.petclinic.model.Owner;
 import services.CrudService;
+import services.OwnerService;
 
-import java.security.acl.Owner;
 import java.util.*;
 import java.util.List;
 
-public class OwnerMap extends AbstractMapService<Owner, Long> implements CrudService<Owner, Long> {
+public class OwnerMap extends AbstractMapService<Owner, Long> implements OwnerService {
 
 
     @Override
@@ -21,12 +22,7 @@ public class OwnerMap extends AbstractMapService<Owner, Long> implements CrudSer
 
     @Override
     public Owner save(Owner object) {
-        return null;
-    }
-
-    @Override
-    public Owner save(Long id,Owner object) {
-        return super.save(id, object);
+        return super.save(object.getId(), object);
     }
 
     @Override
@@ -40,4 +36,8 @@ public class OwnerMap extends AbstractMapService<Owner, Long> implements CrudSer
     }
 
 
+    @Override
+    public Owner findByLastName(String lastName) {
+        return null;
+    }
 }
